@@ -1,0 +1,18 @@
+@import "libs/font";
+
+body, ul {
+    margin: 0;
+    font-family: 'Serif Display', sans-serif;
+}
+
+.container {
+    max-width: 1050px;
+    margin: 0 auto;
+}
+
+
+@import "blocks/promo";
+@import "blocks/nav";
+@import "blocks/tagline";
+@import "blocks/content";
+@import "blocks/number";
