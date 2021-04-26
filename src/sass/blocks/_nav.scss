@@ -16,19 +16,32 @@
         text-decoration: none;
         font-size: 16px;
         line-height: 20px;
+        transition: 0.5s all;
         div {
             margin-left: 10px;
         }
+        &:hover {
+            color: #FBD784;
+            svg {
+                stroke: #FBD784;
+            }
+        }
     }
     &__link {
+        display: inline-block;
         color: #fff;
         text-decoration: none;
         margin-right: 40px;
         font-weight: bold;
         font-size: 16px;
         line-height: 20px;
+        transition: 0.5s all;
         &:last-child {
             margin-right: 0;
+        }
+        &:hover {
+            color: #FBD784;
+            transform: translateY(-5px);
         }
     }
 }
