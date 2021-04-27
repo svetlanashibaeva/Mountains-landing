@@ -9,6 +9,10 @@
         flex-direction: row;
         justify-content: space-between;
     }
+    &__logo {
+        width: 108px;
+        height: 24px;
+    }
     &__account-link {
         display: flex;
         align-items: center;
