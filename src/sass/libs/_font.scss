@@ -1,31 +1,30 @@
 @font-face {
-    font-family: 'Sans Serif Bold';
-    font-display: swap;
-    src: url('../fonts/SansSerif-Bold') format('ttf');
-    font-weight: normal;
+    font-family: 'Sans Serif';
+    src: url('../fonts/SansSerif-Bold.ttf') format('truetype');
+    font-weight: 700;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sans Serif Extrabold';
-    font-display: swap;
-    src: url('../fonts/SansSerif-ExtraBold') format('ttf');
-    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Sans Serif';
+    src: url('../fonts/SansSerif-ExtraBold.ttf') format('truetype');
+    font-weight: 800;
     font-style: normal;
-}
-
-@font-face {
-    font-family: 'Sans Serif Medium';
-    font-display: swap;
-    src: url('../fonts/SansSerif-Medium') format('ttf');
-    font-weight: normal;
+  }
+  @font-face {
+    font-family: 'Sans Serif';
+    src: url('../fonts/SansSerif-Medium.ttf') format('truetype');
+    font-weight: 500;
     font-style: normal;
-}
-
-@font-face {
+  }
+  @font-face {
     font-family: 'Serif Display';
-    font-display: swap;
-    src: url('../fonts/SerifDisplay-Semibold') format('otf');
-    font-weight: normal;
+    src: url('../fonts/SerifDisplay-Semibold.otf') format('opentype');
+    font-weight: 600;
     font-style: normal;
-}
+  }
+  @font-face {
+    font-family: 'Serif Display';
+    src: url('../fonts/SerifDisplay-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
