@@ -1,42 +1,27 @@
-// $(window).scroll(function(e){
-//     parallax();
-//   });
-  
-//   function parallax(){
-//     var scrolled = $(window).scrollTop();
-//     $('.hg').css('top',-(scrolled*0.0315)+'rem');
-//     $('.hg > h1').css('top',-(scrolled*-0.005)+'rem');
-//     $('.hg > h1').css('opacity',1-(scrolled*.00175));
+//preloading
+window.onload = function () {
+    document.body.classList.add('loaded_hiding');
+    window.setTimeout(function () {
+      document.body.classList.add('loaded');
+      document.body.classList.remove('loaded_hiding');
+    }, 2500);
+}
 
-//     $('.mg').css('top',-(scrolled*0.0075)+'rem');
-//     $('.mg > h1').css('top',-(scrolled*-0.005)+'rem');
-//     $('.mg > h1').css('opacity',1-(scrolled*.00175));
-//   };
+//parallax
+var hg = document.querySelector('.hg');
+var mg = document.querySelector('.mg');
+var vg = document.querySelector('.vg');
 
-var image = document.querySelector('.hg');
-var image2 = document.querySelector('.mg');
-
-new simpleParallax(image, {
+new simpleParallax(hg, {
     overflow: true,
-    scale: 1,
-    delay: .6,
-    transition: 'cubic-bezier(0,0,0,1)'
+    scale: 1
 });
 
-new simpleParallax(image2, {
+new simpleParallax(mg, {
     overflow: true,
-    delay: .6,
-    transition: 'cubic-bezier(0,0,0,1)'
+    scale: 1.4
 });
 
-var image3 = document.querySelector('.vg');
-
-new simpleParallax(image3, {
+new simpleParallax(vg, {
     overflow: true
 });
-
-// var images = document.querySelectorAll('.promo__image');
-
-// new simpleParallax(images, {
-//     overflow: true
-// });
